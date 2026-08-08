@@ -1,0 +1,41 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.idea/
+.vscode/
+
+# Local dataset
+data/
+
+# Model checkpoints
+checkpoints/
+
+# Generated results
+results/
+training_graphs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+upload-to-hf.py
