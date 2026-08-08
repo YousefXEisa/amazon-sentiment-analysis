@@ -18,10 +18,6 @@ data/
 # Model checkpoints
 checkpoints/
 
-# Generated results
-results/
-training_graphs/
-
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
