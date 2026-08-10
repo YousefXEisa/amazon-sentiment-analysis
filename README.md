@@ -142,7 +142,7 @@ This run set the direction for the next phase: the model needed **regularization
 | 2     | 0.2695     | 0.2790   | 0.9578       | 0.9583 |
 | 3     | 0.2530     | 0.2819   | 0.9584       | 0.9590 |
 
-**Finding:** Validation loss stayed far more stable across epochs compared to Experiment 1 — the regularization worked. Best F1 **0.9525**, a solid result, but this became the baseline to beat with a different architecture.
+**Finding:** Validation loss stayed far more stable across epochs compared to Experiment 1 — the regularization worked. Best F1 **0.9590**, a solid result, but this became the baseline to beat with a different architecture.
 
 ### Experiment 3 — Regularized RoBERTa (Winner)
 
@@ -155,7 +155,7 @@ This run set the direction for the next phase: the model needed **regularization
 | 3     | 0.2393 | 0.2654 | 0.9672 | 0.9671 |
 | 4     | — | — | — | — (early stopped) |
 
-**Finding:** RoBERTa outperformed the regularized BERT across every epoch, with a best validation F1 of **0.9674** vs BERT's 0.9525 — a meaningful gap under identical training conditions. **RoBERTa was selected as the final model.**
+**Finding:** RoBERTa outperformed the regularized BERT across every epoch, with a best validation F1 of **0.9674** vs BERT's 0.9590 — a meaningful gap under identical training conditions. **RoBERTa was selected as the final model.**
 
 ## Final Model Performance
 
