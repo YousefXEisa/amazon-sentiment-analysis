@@ -6,7 +6,7 @@ A fine-tuned RoBERTa model that classifies Amazon product reviews as **Positive*
 
 **📦 Model on Hugging Face Hub:** [YousefXEisa/amazon-roberta-sentiment](https://huggingface.co/YousefXEisa/amazon-roberta-sentiment)
 
-![Demo Screenshot](assets/demo-screenshot.png)
+![Demo Screenshot](assets/streamlit-demo-screenshot.png)
 
 ---
 
@@ -64,10 +64,12 @@ Sentiment Analysis/
 │   ├── __init__.py
 │   ├── main.py                    # App entrypoint, routes, model lifecycle
 │   └── schemas.py                 # Pydantic request/response schemas
-├── app-gradio/                    # Gradio demo (local)
+├── gradio_app/                    # Gradio demo (local)
+│   ├── __init__.py
 │   └── app.py
 ├── assets/                        
-│   └── demo-screenshot.png        # Streamlit demo screenshot
+│   ├── streamlit-demo-screenshot.png       
+│   └── gradio-demo-screenshot.png          
 ├── notebooks/                     # Model training notebook
 │   └── sentiment_anlaysis_training.ipynb
 ├── results/                       # Final evaluation results
@@ -208,9 +210,11 @@ streamlit run streamlit_app.py
 
 ### Gradio (alternative local UI)
 
+![Demo Screenshot](assets/gradio-demo-screenshot.png)
+
 ```bash
 pip install gradio
-python app-gradio/app.py
+python -m gradio_app.app
 ```
 
 ## API Reference
